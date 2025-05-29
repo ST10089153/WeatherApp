@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "m7CC3np5abXMb1CFyYagNaVAcipvXW1cc31AROB76xo=",
+  "Source": "WeatherNewsAPI",
+  "BasePath": "_content/WeatherNewsAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WeatherNewsAPI\\wwwroot",
+      "Source": "WeatherNewsAPI",
+      "ContentRoot": "C:\\Users\\charn\\OneDrive\\Desktop\\year 3\\PROG orange\\WeatherNewsAPI\\wwwroot\\",
+      "BasePath": "_content/WeatherNewsAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\charn\\OneDrive\\Desktop\\year 3\\PROG orange\\WeatherNewsAPI\\wwwroot\\index.html",
+      "SourceId": "WeatherNewsAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\charn\\OneDrive\\Desktop\\year 3\\PROG orange\\WeatherNewsAPI\\wwwroot\\",
+      "BasePath": "_content/WeatherNewsAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather & News API</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        h1 { color: #223030; }
+        p, li { color: #333; }
+        #news-list { list-style-type: none; padding: 0; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Weather & News API</h1>
+
+    <p>To get weather data, visit: <a href="/weatherforecast">/weatherforecast</a></p>
+
+    <h2>Latest News</h2>
+    <ul id="news-list">Loading news...</ul>
+
+ <script>
+fetch('/api/news/headlines')
+    .then(res => {
+        if (!res.ok) throw new Error("Failed to fetch news");
+        return res.json();
+    })
+    .then(data => {
+        const list = document.getElementById('news-list');
+        list.innerHTML = '';
+        data.forEach(article => {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${article.title}</strong><br>${article.description || ''}`;
+            list.appendChild(li);
+        });
+    })
+    .catch(err => {
+        console.error("Frontend error:", err);
+        document.getElementById('news-list').textContent = 'Failed to load news.';
+    });
+</script>
+</body>
+</html>
